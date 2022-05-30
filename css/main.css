@@ -407,10 +407,6 @@ img {
   margin-right: auto;
 }
 
-.portfolio {
-  padding-top: 40px;
-}
-
 .portfolio__item:not(:last-child) {
   margin-bottom: 28px;
 }
