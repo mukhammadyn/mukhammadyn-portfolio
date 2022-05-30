@@ -1,0 +1,18 @@
+.site-link {
+  display: inline-block;
+  color: #333D4B;
+  border: 1px solid transparent;
+
+  &:focus {
+    outline: none;
+    border: 1px dashed #333D4B;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:visited {
+    color: #1e242b;
+  }
+}
