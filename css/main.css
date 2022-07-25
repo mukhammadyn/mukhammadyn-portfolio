@@ -407,8 +407,23 @@ img {
   margin-right: auto;
 }
 
-.portfolio__item:not(:last-child) {
-  margin-bottom: 28px;
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.portfolio__item {
+  padding: 12px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 17px 2px rgba(23, 23, 23, 0.18);
+          box-shadow: 0px 0px 17px 2px rgba(23, 23, 23, 0.18);
 }
 
 .portfolio__item-title {
@@ -426,9 +441,27 @@ img {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 890px) {
+  .portfolio__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+    row-gap: 5px;
+  }
+}
+
 .title {
   margin: 0;
   font-weight: bold;
+  font-size: 23px;
 }
 
 .site-link {
@@ -446,7 +479,19 @@ img {
   opacity: 0.8;
 }
 
-.site-link:visited {
-  color: #1e242b;
+.site-link--bolder {
+  padding: 6px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.site-link--git-hub {
+  background-color: #161b22;
+}
+
+.site-link--site {
+  background-color: #00AD9F;
 }
 /*# sourceMappingURL=main.css.map */

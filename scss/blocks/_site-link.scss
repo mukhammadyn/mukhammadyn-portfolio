@@ -11,8 +11,20 @@
   &:hover {
     opacity: 0.8;
   }
+}
 
-  &:visited {
-    color: #1e242b;
-  }
+.site-link--bolder {
+  padding: 6px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.site-link--git-hub {
+  background-color: #161b22;
+}
+
+.site-link--site {
+  background-color: #00AD9F;
 }
